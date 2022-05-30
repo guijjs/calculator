@@ -1,0 +1,20 @@
+@import './assets/scss/mixins';
+@import './assets/scss/calculatorGrid';
+@import './assets/scss/colors';
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+html{
+    font-size: 62.5%;
+    body{
+        width: 100vw;
+        height: 100vh;
+        font-size: 3.6rem;
+        @include justifyAlignCenter;
+        color: $white;
+        background-color: #222;
+    }
+}

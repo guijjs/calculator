@@ -1,0 +1,27 @@
+@mixin justifyAlignCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flexDirectionColumn {
+    display: flex;
+    flex-direction: column;
+}
+@mixin pastCurrentBgBorder {
+    background-color: $lightGreen;
+    border: 5px solid $black;
+    border-radius: 5px;
+    padding: 5px;
+}
+@mixin buttonsBgBorder {
+    text-align: center;
+    display: inline-block;
+    background-color: $darkGreen;
+    border: 5px solid $black;
+    border-radius: 5px;
+    transition: all 280ms;
+    &:hover{
+        background-color: $green;
+        border: solid 5px $lightGreen
+    }
+}

@@ -1,0 +1,55 @@
+@import './mixins';
+@import './colors';
+#calculator--container{
+    width: 20%;
+    height: 60%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    background-color: $containerBg;
+    border: 10px solid $black;
+    border-radius: 10px;
+    padding: 0 10px 10px 10px;
+    gap: 0.5rem;
+
+    #current-calc{
+        display: inline-block;
+        grid-column: 1/4;
+        grid-row: 1/2;
+        align-self: center;
+        @include pastCurrentBgBorder;
+        
+    };
+    #past-calc{
+        display: inline-block;
+        @include pastCurrentBgBorder;
+        grid-column: 4/5;
+        grid-row: 1/2;
+        text-align: center;
+        height: fit-content;
+        align-self: center
+    };
+    #operators{
+        grid-column: 4/5;
+        grid-row: 2/6;
+        display: grid;
+        grid-template-columns:1fr;
+        gap: 0.5rem;
+        div{
+            @include buttonsBgBorder;
+        }
+    };
+    #numbers{
+        grid-column: 1/4;
+        grid-row: 2/6;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+        div{
+            @include buttonsBgBorder;
+        }
+        [alt="0"]{
+            grid-column: 1/3;
+        }
+    };
+}
