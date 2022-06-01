@@ -10,24 +10,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-    
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
 </head>
 <body>
     <div id="calculator--container">
-        <div id="current-calc">10+10</div>
+        <div id="current-calc">
+            <span id="current-calc-new"></span>
+        </div>
         <div id="past-calc">20</div>
         <div id="numbers">
-            <div alt="1">1</div>
-            <div alt="2">2</div>
-            <div alt="3">3</div>
-            <div alt="4">4</div>
-            <div alt="5">5</div>
-            <div alt="6">6</div>
-            <div alt="7">7</div>
-            <div alt="8">8</div>
-            <div alt="9">9</div>
-            <div alt="0">0</div>
-            <div alt=",">,</div>
+            <div alt="1"><span>1</span></div>
+            <div alt="2"><span>2</span></div>
+            <div alt="3"><span>3</span></div>
+            <div alt="4"><span>4</span></div>
+            <div alt="5"><span>5</span></div>
+            <div alt="6"><span>6</span></div>
+            <div alt="7"><span>7</span></div>
+            <div alt="8"><span>8</span></div>
+            <div alt="9"><span>9</span></div>
+            <div alt="0"><span>0</span></div>
+            <div alt=","><span>.</span></div>
         </div>
         <div id="operators">
             <div alt="DEL">DEL</div>
@@ -39,5 +41,6 @@
             <div alt="=">=</div>
         </div>
     </div>
+    <script src="./main.js"></script>
 </body>
 </html>

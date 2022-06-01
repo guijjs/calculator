@@ -8,11 +8,11 @@
     font-family: 'Lato', sans-serif;
 }
 html{
-    font-size: 62.5%;
+    font-size: 92.5%;
     body{
         width: 100vw;
         height: 100vh;
-        font-size: 3.6rem;
+        font-size: 2rem;
         @include justifyAlignCenter;
         color: $white;
         background-color: #222;
